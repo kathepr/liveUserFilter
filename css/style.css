@@ -1,0 +1,94 @@
+@import url(./variables.css);
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--color-3);
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+  }
+  
+  .body__contenedor {
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px var(--color-2);
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .header__titulo {
+    margin: 0;
+  }
+  
+  .header__subtitulo {
+    display: inline-block;
+    margin: 5px 0 20px;
+    opacity: 0.8;
+  }
+  
+  .contenedor__header {
+    background-color: var(--color-1);
+    color: var(--color-5);
+    padding: 30px 20px;
+  }
+  
+  .contenedor__header input {
+    background-color: var(--color-3);
+    border: 0;
+    border-radius: 50px;
+    color: var(--color-4);
+    font-size: 14px;
+    padding: 10px 15px;
+    width: 100%;
+  }
+  
+  .contenedor__header input:focus {
+    outline: none;
+  }
+  
+  .user-list {
+    background-color: var(--color-5);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    max-height: 900px;
+    overflow-y: auto;
+  }
+  
+  .user-list li {
+    display: flex;
+    padding: 20px;
+  }
+  
+  .user-list img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+  }
+  
+  .user-list .user-info {
+    margin-left: 10px;
+  }
+  
+  .user-list .user-info h4 {
+    margin: 0 0 10px;
+  }
+  
+  .user-list .user-info p {
+    font-size: 12px;
+  }
+  
+  .user-list li:not(:last-of-type) {
+    border-bottom: 1px solid var(--color-5);
+  }
+  
+  .user-list li.hide {
+    display: none;
+  }
+  
